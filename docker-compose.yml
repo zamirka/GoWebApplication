@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    gowebapplication:
+      container_name: gowebapplication
+      build: .
+      command: go run gowebapp/main.go
+      volumes:
+        - ./:/go/src/app
+      working_dir: /go/src/app
+      ports:
+        - "3030:3001"
+      environment:
+        PORT: 3001

@@ -1,2 +1,2 @@
 # GoWebApplication
-A simple framework for creating we applicayions with Go
+A simple framework for creating web applications with Go
